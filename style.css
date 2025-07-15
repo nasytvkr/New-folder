@@ -10,81 +10,77 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: whitesmoke;
-    overflow-y: auto;
+    background-color: #f5f5f5;
 }
 
-section {
+.container {
     background-color: white;
-    width: 350px;
-    margin: 150px auto 30px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.1);
-    font-size: 0.75rem;
-}
-
-div {
-    margin: 10px 0 0 10%;
-}
-
-img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: block;
-    margin: 10px auto;
-}
-
-.title {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-size: 30px;
-    margin: 10px 0;
-    color: black;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
 }
 
 label {
+    display: block;
     font-weight: bold;
-    display: block;
     margin-bottom: 5px;
+    color: #333;
 }
 
-input {
-    border: solid 0.5px rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
-    width: 250px;
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
     padding: 8px;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
 }
 
-input::placeholder {
-    text-align: center;
-}
-
-input#checkbox {
-    width: auto;
+input[type="checkbox"] {
     margin-right: 5px;
     vertical-align: middle;
 }
 
-input[type="checkbox"]{
-    margin-top: 10px;
-}
-
 button {
-    width: 250px;
-    height: 30px;
-    border-radius: 5px;
-    background: linear-gradient(45deg, #007bff, #00c4ff);
-    color: white;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(90deg, #6b48ff, #a44aff);
     border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
     cursor: pointer;
-    display: block;
-    margin: 20px auto;
 }
 
 button:hover {
-    background: linear-gradient(45deg, #0056b3, #0096cc);
+    background: linear-gradient(90deg, #5a3de6, #9140e6);
+}
+
+.signin-link {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #666;
+}
+
+.signin-link a {
+    color: #6b48ff;
+    text-decoration: none;
+}
+
+.signin-link a:hover {
+    text-decoration: underline;
 }
